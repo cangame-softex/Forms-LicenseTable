@@ -1,0 +1,33 @@
+/* src/css/LicenseTable.css */
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #2998ff;
+}
+
+.table-wrapper {
+  border: 2px solid black;
+  padding: 20px;
+  width: 60%; /* Ajuste conforme necessário */
+}
+
+.styled-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.styled-table th,
+.styled-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.styled-table th {
+  background-color: #f2f2f2;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
