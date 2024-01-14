@@ -1,8 +1,8 @@
 // src/components/LicenseTable.jsx
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Layout from "./Layout";
 import "../css/LicenseTable.css";
-import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 const LicenseTable = () => {
   const [data, setData] = useState([]);
@@ -11,7 +11,6 @@ const LicenseTable = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Substitua 'sua-api/licencas' pela URL real da sua API
         const response = await axios.get("https://sua-api.com/licencas");
         setData(response.data);
 
@@ -37,10 +36,7 @@ const LicenseTable = () => {
   }, []);
 
   return (
-    <div className="app-container">
-      <div className="header" style={{ backgroundColor: "#03588c" }}>
-        <h1>CanGame Edu</h1>
-      </div>
+    <Layout>
       <div className="table-container">
         <div className="table-wrapper">
           <h2>Controle de Licenças</h2>
@@ -72,20 +68,7 @@ const LicenseTable = () => {
           </table>
         </div>
       </div>
-      <div
-        className="footer"
-        style={{ backgroundColor: "#03588c", marginTop: "auto" }}
-      >
-        <div className="social-icons">
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <FaInstagram />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <FaFacebook />
-          </a>
-        </div>
-      </div>
-    </div>
+    </Layout>
   );
 };
 
