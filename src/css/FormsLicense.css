@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'GrandHotel-Regular';
+    src: url('../components/fonts/GrandHotel-Regular.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Felbridge Std Bold';
+    src: url('../components/fonts/Felbridge_Std_Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Felbridge Std Light';
+    src: url('../components/fonts/Felbridge_Std_Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+  }
+

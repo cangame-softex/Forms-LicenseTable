@@ -2,11 +2,7 @@
 
 import React, { useState } from "react";
 import Layout from "./Layout";
-import "../App.css";
-import { IoHome } from "react-icons/io5";
-import { FaRegPenToSquare } from "react-icons/fa6";
-import { FaRegAddressBook } from "react-icons/fa6";
-import { AiOutlineControl } from "react-icons/ai";
+import "../css/Forms.css";
 import { Link } from "react-router-dom";
 
 const Forms = () => {
@@ -46,7 +42,7 @@ const Forms = () => {
 
   return (
     <Layout>
-      <form className="form" onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
         <label>Logo:</label>
         <input type="file" onChange={handleLogoTipoChange} />
 

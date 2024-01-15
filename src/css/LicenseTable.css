@@ -1,20 +1,4 @@
 /* LicenseTable.css */
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.header {
-  padding: 20px;
-  color: white;
-  text-align: center;
-  background-color: #03588c; /* Altera a cor de fundo do cabeçalho */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
-  margin-bottom: 20px; /* Adiciona margem inferior ao cabeçalho */
-}
-
 .table-container {
   display: flex;
   justify-content: center;

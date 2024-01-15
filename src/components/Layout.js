@@ -1,27 +1,36 @@
 // Layout.js
 
 import React from "react";
+import "../css/Layout.css";
 import { Link } from "react-router-dom";
 import Logo from "../img/logoCangame.png";
+import { IoHome } from "react-icons/io5";
+import { FaRegPenToSquare } from "react-icons/fa6";
+import { FaRegAddressBook } from "react-icons/fa6";
+import { AiOutlineControl } from "react-icons/ai";
+
 
 const Layout = ({ children }) => {
   return (
     <div className="layout-container">
       <header className="header">
         <img src={Logo} alt="Logo" className="logo" />
-        <h1>Licenças</h1>
+        <h1>Cangame Edu</h1>
       </header>
 
       <div className="main-content">
         <aside className="sidebar">
-          <Link to="/">
-            <button>Home</button>
+          <Link to="/home">
+            <button><IoHome />Home</button>
           </Link>
           <Link to="/formulario">
-            <button>Cadastro de Contrato</button>
+            <button><FaRegPenToSquare />Cadastro de Contrato</button>
+          </Link>
+          <Link to="/licença">
+            <button><FaRegAddressBook />Cadastro de Licenças</button>
           </Link>
           <Link to="/license-table">
-            <button>Controle de Licenças</button>
+            <button><AiOutlineControl />Controle de Licenças</button>
           </Link>
         </aside>
 
